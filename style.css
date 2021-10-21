@@ -1,0 +1,591 @@
+*{
+    box-sizing: border-box;
+    list-style-type: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0px;
+    background-color: #212121;
+}
+li{
+    display: inline;
+    margin-left: 15px;
+    font-family: 'M PLUS Rounded 1c', sans-serif;;
+    color: white;
+    font-size: 20px;
+}
+li:hover{
+    color: yellow;
+    cursor: pointer;
+}
+.home-link{
+    margin-left: 0px;
+}
+.nav-container{
+    display: flex;
+    justify-content: flex-end;
+}
+ul{
+    display: inline;
+    margin: 0px;
+    padding: 0px;
+    background-color: #212121;
+    height: 30px;
+    background-color: inherit;
+}
+.explore-style{
+    margin-right: 40px;
+    margin-top: 10px;
+    border-radius: 50px;
+    padding: 5px 10px;
+}
+.explore-style-apply{
+    background-color: yellow;
+    margin-right: 40px;
+    margin-top: 10px;
+    border-radius: 50px;
+    padding: 5px 10px;
+}
+.explore-style-apply>ul>li{
+    transition: all 0.2s;
+    color: #212121;
+}
+.mypic{
+    border-radius: 100%;
+    height: 300px;
+    margin-left: 200px;
+    margin-top: 100px;
+}
+.hello-head{
+    width: 30vw;
+    margin-bottom: 0px;
+    font-family: 'Proza Libre', sans-serif;
+    color: white;
+    font-size: 30px;
+}
+.hello-sub{
+    margin-top: 3px;
+    color: white;
+    font-family: sans-serif;
+}
+.hello-text{
+    margin-left: 300px;
+    margin-top: 200px;
+}
+.hello{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 0fr;
+    height: 500px;
+    margin-top: 80px;
+}
+.home{
+    background-color:#212121;
+    height: 80vh;
+}
+.fas{
+    position: relative;
+    color: rgb(199, 199, 23);
+}
+.fa-meteor{
+    left: 250px;
+    top: -60%;
+}
+.fa-rocket{
+    left: 650px;
+    top: 0%;
+}
+.fa-dna{
+    top: -20%;
+    left: 100px;
+}
+.fa-vial{
+    left: 300px;
+    top: 10%;
+}
+.fa-atom{
+    top: -35%;
+    left: -40%;
+}
+.fa-space-shuttle{
+    left: 10%;
+    top: 4px;
+    transition: all 0.2s;
+}
+.nav-svg{
+    color: white;
+    height: 100px;
+}
+.explore-btn{
+    background-color: inherit;
+    color: yellow;
+    border: solid yellow;
+    padding: 5px;
+    border-radius: 6px;
+}
+.explore-btn:hover{
+    transform: scale(1.2);
+    transition: all 0.2s;
+}
+.about{
+    background-color: yellow;
+}
+.hello-svg{
+    background-color: yellow;
+    margin: 0px;
+}
+.about-head{
+    margin: 0px;
+    text-align: center;
+    font-family:'Proza Libre', sans-serif ;
+    font-size: 40px;
+    word-spacing: 4px;
+    margin-bottom: 10px;
+}
+.yellow-background1{
+    background-color: #ffff00;
+}
+.about-items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 550px;
+    justify-content: space-evenly;
+}
+.intro,.quali,.int{
+    width: 40vw;
+    border: #212121 solid 4px;
+    height: 50px;
+    border-radius: 5px;
+}
+.intro-title, .quali-title, .int-title{
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    margin: 0px;
+    margin-top: 8px;
+    margin-left: 4px;
+    margin-bottom: 0px;
+}
+
+.detail{
+    margin: 0px;
+    margin-left: 4px;
+    display: none;
+    font-family: 'Roboto', sans-serif;
+}
+.fa-chevron-circle-down{
+    color: #212121;
+    position: relative;
+    left: 580px;
+    top: -25px;
+}
+.fa-guitar{
+    color: #212121;
+    position: relative;
+    left: 1200px;
+}
+.fa-book{
+    color: #212121;
+    position: relative;
+    left: 100px;
+    top: 350px;
+}
+.fa-university{
+    color: #212121;
+    position: relative;
+    left: 1300px;
+    top: 180px;
+}
+.fa-glasses{
+    color: #212121;
+    position: relative;
+    left: 250px;
+    top: 200px;
+}
+.fa-lightbulb{
+    color: #212121;
+}
+.about-svg{
+    background-color: #212121;
+}
+.skill-head{
+    color: white;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    text-align: center;
+    font-family:'Proza Libre', sans-serif ;
+    font-size: 40px;
+    word-spacing: 4px;
+}
+.skills{
+    background-color: #212121;
+}
+.bar{
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    border-radius: 4px;
+}
+.fill{
+    height: 100%;
+    background: rgb(131,58,180);
+    background: linear-gradient(52deg, rgba(131,58,180,1) 0%, rgba(255,255,0,1) 55%, rgba(252,176,69,1) 100%);
+    width: 0%;
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+}
+.bar-html-fill{
+    width: 75%;
+}
+.bar-css-fill{
+    width: 85%;
+}
+.bar-js-fill{
+    width: 72%;
+}
+.bar-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-top: 10px;
+    height: 400px;
+    margin-left: 30vw;
+    width: 40vw;
+}
+.otherskill{
+    border: solid yellow 4px;
+    border-radius: 4px;
+    width: 40vw;
+    margin-left: 30vw;
+    height: 50px;
+    margin-top: 20px;
+    margin-bottom: 170px;
+}
+.otherskill-title{
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    margin: 0px;
+    margin-top: 8px;
+    margin-left: 4px;
+    margin-bottom: 0px;
+    color: white;
+}
+.otherdown{
+    color: white;
+}
+.otherskill-height{
+    height: 180px;
+}
+.otherskill-detail{
+    margin: 0px;
+    margin-left: 4px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    display: none;
+}
+.fa-html5{
+    color: #e34c26;
+    font-size: 50px;
+    position: relative;
+    left: 400px;
+    top: 124px;
+}
+.fa-css3-alt{
+    color: #264de4;
+    font-size: 50px;
+    position: relative;
+    left: 359px;
+    top: 237px;
+}
+.fa-js-square{
+    color: 	#f0db4f;
+    font-size: 50px;
+    position: relative;
+    left: 316px;
+    top: 349px;
+}
+.skill-svg{
+    background-color: yellow;
+}
+.projects{
+    background-color: yellow;
+}
+.yellow-background2{
+    background-color: yellow;
+}
+.project-head{
+    margin-bottom: 0px;
+    margin-top: 0px;
+    text-align: center;
+    font-family:'Proza Libre', sans-serif ;
+    font-size: 40px;
+    word-spacing: 4px;
+}
+.project-img{
+    height: 200px;
+    width: 300px;
+    object-fit: contain;  
+    position: relative;
+    top: -23px;
+}
+.project-item{
+    height: 300px;
+    width: 300px;
+    background-color: #212121;
+    border-radius: 5px;
+}
+.project-text-visible>p{
+    visibility: visible;
+}
+.project-img-blur>img{
+    filter: blur(1px);
+}
+.porject-container{
+    height: 400px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+}
+.project-item:hover{
+    transform: scale(1.1);
+    transition: all 0.5s;
+    transition-timing-function: all 0.5s cubic-bezier(0.38, 0.9, 0.52, 1.21) 0s;;
+}
+.project-text{
+    color: yellow;
+    position: relative;
+    font-size: 30px;
+    text-align: center;
+    visibility: visible;
+    font-family:'Proza Libre', sans-serif ;
+    filter: blur(0px);
+    top: 120px;
+    z-index: 2;
+    visibility: hidden;
+}
+#calculator-text{
+    color: red;
+}
+.red{
+    color: red;
+}
+.yellow{
+    color: yellow;
+}
+a{
+    text-decoration: none;
+}
+.footer{
+    height: 40vh;
+    background-color: #212121;
+}
+.project-svg{
+    background-color: yellow;
+}
+.project-svg-background{
+    background-color: #212121;
+}
+.footer-head{
+    margin-bottom: 0px;
+    margin-top: 0px;
+    text-align: center;
+    font-family:'Proza Libre', sans-serif ;
+    font-size: 40px;
+    word-spacing: 6px;
+    color: white;
+}
+.social-container>a>i{
+    color: white;
+    font-size: 50px;
+}
+.social-container{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 80px;
+}
+.fb>i:hover{
+    color: #4267B2;
+}
+.insta>i:hover{
+    color: #e95950;
+}
+.twitter>i:hover{
+    color: #1DA1F2;
+}
+.linkedin>i:hover{
+    color: #0e76a8;
+}
+.github>i:hover{
+    color: yellow ;
+}
+.back-to-top{
+    position: fixed;
+    border-radius: 50px;
+    height: 50px;
+    width: 50px;
+    border: solid #212121 4px;
+    left: 20px;
+    display: none;
+}
+.back-to-top:hover{
+    background-color: lightgray;
+}
+.back-to-top>i{
+    color: #212121;
+    font-size: 20px;
+}
+.drop-height{
+    height: 180px;
+}
+.detail-visible{
+    display: block;
+}
+@media only screen and (max-width: 420px) {
+    
+    .fa-meteor, .fa-rocket, .fa-dna, .fa-vial {
+        position: static;
+    }
+    .fa-meteor{
+        position: absolute;     
+        top: 200px;
+    }
+    .fa-atom{
+        position: absolute;
+        top: 230px;
+        left: 30px;
+    }
+    .fa-rocket{
+        position: absolute;
+        top: 430px;
+        left: 340px;
+    }
+    .fa-vial{
+        position: absolute;
+        top: 550px;
+    }
+    .fa-dna{
+        position: absolute;
+        top: 550px;
+        display: none;
+    }
+    .hello-text{
+        margin: 0px;
+        margin-left: 50px;
+        font-size: 20px;
+    }
+    .mypic{
+        height: 130px;
+        margin: 0px;
+        position: absolute;
+        top: 260px;
+        left: 240px;
+    }
+    .hello-sub{
+        margin-top: 15px;
+    }
+    .fa-html5, .fa-css3-alt, .fa-js-square{
+        position: static;
+    }
+    .otherdown{
+        position: static;
+    }
+    a{
+        width: 30%;
+    }
+    .project-item{
+        width: 100%;
+    }
+    *{
+        overflow-x: hidden;
+    }
+    .hello{
+        display: block;
+        padding-top: 100px;
+    }
+    .explore-btn{
+        margin-top: 15px;
+        margin-left: 10px;
+    }
+    .intro,.quali,.int{
+        width: 250px;
+        overflow: hidden;
+    }
+    .fa-chevron-circle-down{
+        position: relative;
+        left: 220px;
+        top: -25px;
+    }
+    .fa-guitar{
+        display: none;
+    }
+    .fa-book{
+        position: relative;
+        top: 300px;
+        left: 50px;
+    }
+    .fa-university{
+        display: none;
+    }
+    .fa-glasses{
+        top: 100px;
+        left: 340px;
+    }
+    .bar-container{
+        width: 300px;
+        margin-left: 52px;
+    }
+    .bar{
+        width: 290px;
+    }
+    .fa-html5, .fa-js-square, .fa-css3-alt{
+        font-size: 40px;
+    }
+    .fa-html5{
+        position: relative;
+        top: 120px;
+        left: 15px;
+    }
+    .fa-css3-alt{
+        position: relative;
+        top: 233px;
+        left: -19px;
+    }
+    .fa-js-square{
+        position: relative;
+        top: 343px;
+        left: -58px;
+    }
+    .otherskill{
+        width: 250px;
+        margin-left: 65px;
+        overflow: hidden;
+    }
+    .scroll{
+        overflow: scroll;
+    }
+    .project-item{
+        height: 150px;
+    }
+    .project-img{
+        height: 100px;
+        object-fit: contain;  
+        position: relative;
+        top: 20px;
+        left: -90px;
+    }
+    .project-text{
+        display: none;
+    }
+    .social-container>a>i{
+        font-size: 40px;
+    }
+    .fb{
+        margin-left: 30px;
+    }
+    .home{
+        overflow: hidden;
+    }
+  }
