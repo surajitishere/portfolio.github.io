@@ -8,7 +8,11 @@ const spaceShuttle = document.querySelector('.fa-space-shuttle');
 const links = document.querySelectorAll('li');
 const backToTop = document.querySelector('.back-to-top');
 const dropdown = document.querySelectorAll('.fa-chevron-circle-down');
-const bar = document.querySelectorAll('.bar')
+const bar = document.querySelectorAll('.bar');
+const navbar = document.querySelector(".nav-container");
+const ham = document.querySelector(".ham");
+const helloText = document.querySelector(".hello-text");
+const hello = document.querySelector(".hello")
 
 //nav links
 
@@ -78,4 +82,12 @@ projectItem.forEach((item)=>{
         item.classList.remove('project-text-visible');
         item.classList.remove('project-img-blur')
     })
+})
+
+// nav height
+
+ham.addEventListener('click',()=>{
+    navbar.classList.toggle('nav-height-toggle');
+    helloText.classList.toggle('hello-text-toggle');
+    hello.classList.toggle("hello-toggle")
 })
