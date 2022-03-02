@@ -760,3 +760,19 @@ a {
     display: none;
   }
 }
+@media only screen and (max-width: 1400px) {
+  .fa-rocket {
+    display: none;
+  }
+  .fa-satellite {
+    display: none;
+  }
+  .fa-university {
+    display: none;
+  }
+}
+@media only screen and (max-width: 1300px) {
+  .fa-server {
+    display: none;
+  }
+}
